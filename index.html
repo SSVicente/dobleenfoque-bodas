@@ -138,20 +138,25 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
       max-width: 740px;
-      margin: 22px auto 0;
+      margin: 24px auto 0;
+      padding: 14px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
       list-style: none;
     }
 
     .quote-meta li {
-      padding: 8px 12px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.48);
-      color: var(--ink-soft);
-      font-size: 0.78rem;
+      padding: 0 18px;
+      color: var(--muted);
+      font-size: 0.7rem;
       font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .quote-meta li + li {
+      border-left: 1px solid var(--line);
     }
 
     .contact-actions {
@@ -496,6 +501,20 @@
       .promise-list {
         grid-template-columns: 1fr;
       }
+
+      .quote-meta {
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .quote-meta li {
+        padding: 0;
+      }
+
+      .quote-meta li + li {
+        border-left: 0;
+      }
     }
 
     @media (max-width: 420px) {
@@ -599,9 +618,8 @@
             <li>Getting ready, maquillaje, ceremonia, recepción y fiesta dentro de las horas contratadas</li>
             <li>Retratos de pareja, familia, cortejo e invitados clave</li>
             <li>Detalles de decoración, ambiente y momentos espontáneos</li>
-            <li>Sesión de novios el día del evento con dirección natural</li>
-            <li>Selección y edición de fotografías finales con estilo limpio y atemporal</li>
-            <li>Entrega en galería digital privada</li>
+            <li>Sesión de novios el día del evento con dirección guiada</li>
+            <li>Entrega en galería digital privada con fotografías finales editadas</li>
             <li>Equipo incluido: 1 fotógrafo</li>
           </ul>
           <div class="investment">
